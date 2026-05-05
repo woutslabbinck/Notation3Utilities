@@ -1,0 +1,52 @@
+{
+  "name": "N3-utility",
+  "version": "0.1.0",
+  "description": "Reasoning utilities for the Notation 3 reasoning language that work in the browser and Node.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "browser": {
+    "./dist/index.js": "./dist/index.browser.js",
+    "./dist/index.d.ts": "./dist/index.browser.d.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsx",
+    "clean": "rm -rf ./dist",
+    "prepare": "npm run build",
+    "release": "npm run build && npm publish --access public",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woutslabbinck/N3-utilities.git"
+  },
+  "keywords": [
+    "Notation3",
+    "Reasoning"
+  ],
+  "author": "Wout Slabbinck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/woutslabbinck/N3-utilities/issues"
+  },
+  "homepage": "https://github.com/woutslabbinck/N3-utilities#readme",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/tmp": "^0.2.6",
+    "jest": "^30.3.0",
+    "jest-rdf": "^2.0.0",
+    "ts-jest": "^29.4.9",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@rdfjs/types": "^2.0.1",
+    "@types/n3": "^1.26.1",
+    "eyereasoner": "^19.0.1",
+    "eyeling": "^1.10.6",
+    "n3": "^2.0.3",
+    "tmp": "^0.2.3"
+  }
+}

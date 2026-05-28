@@ -26,7 +26,7 @@ export class EyeReasoner extends Reasoner {
    * Run the reasoner
    * @returns An N3 string containing the result of the inferences
    */
-  public async run(data: string[], rules: string[]): Promise<string> {
+  public async run(data: string, rules: string): Promise<string> {
     const tmpobj = fileSync();
     fs.appendFileSync(tmpobj.name, data);
     fs.appendFileSync(tmpobj.name, rules);

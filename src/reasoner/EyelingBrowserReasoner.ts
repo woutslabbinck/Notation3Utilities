@@ -1,5 +1,5 @@
 import { Reasoner } from "./Reasoner";
-import { reason } from "eyeling"
+// import { reason } from "eyeling" //TODO:
 
 export class EyelingReasoner extends Reasoner {
     constructor() {
@@ -7,7 +7,7 @@ export class EyelingReasoner extends Reasoner {
     }
 
     public async run(data: string, rules: string): Promise<string> {
-
-        return reason({ proofComments: false }, data + rules)
+        // TODO: don't use reason here
+        return Promise.resolve("<a> <b> <c> .")
     }
 }

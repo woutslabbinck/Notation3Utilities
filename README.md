@@ -25,17 +25,14 @@ npm run test:browser
 
 ### Reasoner Interface
 
-Different instances:
-- eye (The OG)
+Different instances: TODO:
+- eye (The OG prolog version)
 - eyeReasoner (webassembly version)
-- eyeling
-
-
-
+- eyeling (the newest one from Jos)
 
 
 ## Feedback and questions
 
-Do not hesitate to [report a bug](https://github.com/woutslabbinck/N3-Utility/issues).
+Do not hesitate to [report a bug](https://github.com/woutslabbinck/Notation3Utilities/issues).
 
 Further questions can also be asked to [Wout Slabbinck](mailto:wout.slabbinck@ugent.be) (developer and maintainer of this repository).

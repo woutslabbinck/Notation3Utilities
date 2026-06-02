@@ -2,7 +2,6 @@
   "name": "N3-utility",
   "version": "0.1.0",
   "description": "Reasoning utilities for the Notation 3 reasoning language that work in the browser and Node.",
-
   "exports": {
     ".": {
       "import": "./dist/esm/index.js",
@@ -17,8 +16,9 @@
     "clean": "rm -rf ./dist",
     "prepare": "npm run build",
     "release": "npm run build && npm publish --access public",
-    "test": "jest",
-    "test:browser": "vitest run --browser"
+    "test": "npm run test:browser && npm run test:node",
+    "test:browser": "vitest run --browser",
+    "test:node": "vitest run -c vitest.node.config.ts"
   },
   "repository": {
     "type": "git",
@@ -34,10 +34,7 @@
     "@types/jest": "^30.0.0",
     "@types/tmp": "^0.2.6",
     "@vitest/browser-playwright": "^4.1.7",
-    "jest": "^30.3.0",
-    "jest-rdf": "^2.0.0",
     "playwright": "^1.60.0",
-    "ts-jest": "^29.4.9",
     "tsx": "^4.21.0",
     "typescript": "^6.0.3",
     "vite": "^8.0.14",

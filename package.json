@@ -22,13 +22,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/woutslabbinck/N3-utilities.git"
+    "url": "git+https://github.com/woutslabbinck/Notation3Utilities.git"
   },
   "keywords": [ "Notation3", "Reasoning" ],
   "author": "Wout Slabbinck",
   "license": "MIT",
-  "bugs": { "url": "https://github.com/woutslabbinck/N3-utilities/issues" },
-  "homepage": "https://github.com/woutslabbinck/N3-utilities#readme",
+  "bugs": { "url": "https://github.com/woutslabbinck/Notation3Utilities/issues" },
+  "homepage": "https://github.com/woutslabbinck/Notation3Utilities#readme",
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@types/jest": "^30.0.0",

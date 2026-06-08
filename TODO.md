@@ -1,6 +1,0 @@
-- [ ] Tests
-  - [ ] Add socrates test for each platform
-- [ ] Test in browser -> e.g. in ODRL-Validator Demo
-- [ ] EYE
-  - [ ] install a recent version and check which ones work
-- [ ] publish to npm

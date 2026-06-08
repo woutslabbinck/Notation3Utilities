@@ -1,10 +1,8 @@
 
 import { describe, test, expect } from 'vitest'
 import { Parser, Store } from 'n3'
-
 import { EyelingReasoner } from 'N3-utility'
 
-// TODO: how to test not in the browser?
 describe('node dist', () => {
 
   test('testing the eyeling reasoner in node', async () => {
@@ -29,19 +27,17 @@ describe('node dist', () => {
 } .
     `;
 
-    const store = new Store(
-      new Parser().parse(data)
-    );
+    const store = new Store(new Parser().parse(data));
 
     const reasoner = new EyelingReasoner();
-    
+
     const result = await reasoner.reason(store, rules);
     expect(
       result.getQuads(null, null, null, null).length
     ).toBeGreaterThan(0);
     expect(result.getQuads(
-      'http://example.org/socrates#Socrates', 
-      'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 
+      'http://example.org/socrates#Socrates',
+      'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
       'http://example.org/socrates#Mortal', null).length).toBe(1);
   });
 

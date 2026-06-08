@@ -1,7 +1,7 @@
 
 import { describe, test, expect } from 'vitest'
 import { Parser, Store } from 'n3'
-import { EyelingReasoner } from 'N3-utility'
+import { EyelingReasoner } from 'n3-utility'
 
 describe('node dist', () => {
 

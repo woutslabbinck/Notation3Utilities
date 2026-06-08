@@ -1,4 +1,5 @@
 # Notation 3 Utilities
+[![npm](https://img.shields.io/npm/v/n3-utility)](https://www.npmjs.com/package/n3-utility)
 
 [Notation3 (N3)](https://w3c-cg.github.io/N3/spec/) is a language for natively building and reasoning over semantic Knowledge Graphs.
 Several online tools exist to experiment with N3, such as the [Notation3 Editor](https://editor.notation3.org/), the [Eyeling Playground](https://eyereasoner.github.io/eyeling/playground) and the [eye-js playground](https://eyereasoner.github.io/eye-js/example/).
@@ -40,7 +41,7 @@ For Typescript, independent of whether you use it in a browser or Node environme
 
 ```ts
 import { Parser, Store } from 'n3'
-import { EyelingReasoner } from 'N3-utility'
+import { EyelingReasoner } from 'n3-utility'
 
 const data = `
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
